@@ -6,12 +6,11 @@ Function doFirebaseSignIn()
     Dim fb_email, fb_pwd, fb_apikey As String
     Dim fb_auth_token As String
     
-    resultado = ""
-
     'Credentials
     fb_email = "<e-mail address>"
     fb_pwd = "<password">
     fb_apikey = "<project-app API key>"
+    fb_auth_token = ""
     google_signin_url = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=" & fb_apikey
     
     If fb_email <> "" And fb_pwd <> "" Then
